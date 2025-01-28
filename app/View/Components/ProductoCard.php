@@ -8,20 +8,6 @@ use Illuminate\View\Component;
 
 class ProductoCard extends Component
 {
-    // ATRIBUTOS CLASE
-    public $nombre;
-    public $precio;
-    public $descripcion;
-    /**
-     * Create a new component instance.
-     */
-    public function __construct($nombre,$precio,$descripcion)
-    {
-        $this->nombre = $nombre;
-        $this->precio = $precio;
-        $this->descripcion = $descripcion;
-    }
-
     /**
      * Get the view / contents that represent the component.
      */

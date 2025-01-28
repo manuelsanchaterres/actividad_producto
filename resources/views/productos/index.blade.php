@@ -1,8 +1,8 @@
 @foreach ($productos as $producto)
-    <x-producto-card 
-        :nombre="$producto['nombre']" 
-        :precio="$producto['precio']" 
-        :descripcion="$producto['descripcion']"
-    />
+    <x-producto-card>
+        <p>{{$producto['nombre']}}</p>
+        <p>{{$producto['precio']}}</p>
+        <p>{{$producto['descripcion']}}</p>
+    </x-product-card>
 @endforeach
 
