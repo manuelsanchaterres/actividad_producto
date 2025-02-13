@@ -1,8 +1,5 @@
 @foreach ($productos as $producto)
-    <x-producto-card>
-        <p>{{$producto['nombre']}}</p>
-        <p>{{$producto['precio']}}</p>
-        <p>{{$producto['descripcion']}}</p>
-    </x-product-card>
+    <?php echo "<a href='{$producto["uri"]}'>{$producto["nombre"]}</a><br>" ?>
 @endforeach
+
 
